@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell on Ketalog</title>
+
+    <!-- Tailwind Output CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="max-w-[1400px] ">
+        <div class="relative w-full h-[280px] rounded-lg overflow-hidden bg-gray-200">
+
+            <!-- Background Image -->
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Sell Online"
+                class="w-full h-full object-cover">
+
+            <!-- Overlay Content -->
+            <div class="absolute inset-0 bg-white/20 flex items-top justify-start pt-10">
+                <div class="px-10">
+                    <h1 class="text-5xl font-semibold text-gray-800 mb-3">
+                        Sell Online with Ketalog
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FEATURES SECTION ================= -->
+    <section class="max-w-[1350px] mx-auto">
+        <div class="bg-white rounded-xl shadow-md -mt-10 px-4 py-8 mb-20 z-20 relative">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 
+                    gap-4 text-center
+                    divide-y md:divide-y-0 md:divide-x divide-gray-700">
+
+                <!-- Feature 1 -->
+                <div class="flex flex-col items-center gap-3 text-center px-4">
+                    <div class="w-14 h-14 flex items-center justify-center">
+                        <img src="/assets/icons/community icon.svg" class="w-16 h-16 object-contain" />
+                    </div>
+                    <p class="text-sm font-medium">
+                        Localization Focus
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex flex-col items-center gap-3 text-center px-4">
+                    <div class="w-14 h-14 flex items-center justify-center">
+                        <img src="/assets/icons/wallet icon.svg" class="w-16 h-16 object-contain" />
+                    </div>
+                    <p class="text-sm font-medium">
+                        7* days secure & regular payments
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex flex-col items-center gap-3 text-center px-4">
+                    <div class="w-16 h-16 flex items-center justify-center">
+                        <img src="/assets/icons/Arrow Icon.svg" class="w-16 h-16 object-contain" />
+                    </div>
+                    <p class="text-sm font-medium">
+                        Low cost of doing business
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="flex flex-col items-center gap-3 text-center px-4">
+                    <div class="w-14 h-14 flex items-center justify-center">
+                        <img src="/assets/icons/Call Support.svg" class="w-16 h-16 object-contain" />
+                    </div>
+                    <p class="text-sm font-medium">
+                        One click Seller Support
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="flex flex-col items-center gap-3 text-center px-4">
+                    <div class="w-14 h-14 flex items-center justify-center">
+                        <img src="/assets/icons/Shooping bag.svg" class="w-16 h-16 object-contain" />
+                    </div>
+                    <p class="text-sm font-medium">
+                        Access the Frequent Offers
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MAIN SECTION ================= -->
+    <section class="max-w-[1350px] mx-auto min-h-screen flex items-center">
+        <div class="grid grid-cols-12 gap-4 w-full">
+
+            <!-- ================= LEFT SIDEBAR ================= -->
+            <div class="col-span-12 md:col-span-4 lg:col-span-3 self-start">
+                <div class="bg-white rounded-xl shadow-sm p-6 max-w-sm">
+
+                    <ul class="space-y-3">
+
+                        <!-- Active -->
+                        <li>
+                            <button onclick="showTab('create', this)" class="tab-btn w-full flex items-center gap-3
+               px-5 py-3 rounded-lg
+               border border-blue-600
+               bg-blue-50 text-blue-600
+               font-semibold
+               scale-105 shadow-sm transition">
+
+                                <img src="/assets/icons/Account Icon.svg" alt="Create Account Icon"
+                                    class="w-5 h-5 object-contain" />
+
+                                Create Account
+                            </button>
+                        </li>
+
+                        <!-- Normal -->
+                        <li>
+                            <button onclick="showTab('products', this)" class="tab-btn w-full text-left px-5 py-3 rounded-lg
+                                   text-gray-700 font-medium
+                                   hover:bg-gray-100 hover:scale-105 transition">
+                                List Products
+                            </button>
+                        </li>
+
+                        <li>
+                            <button onclick="showTab('shipping', this)" class="tab-btn w-full text-left px-5 py-3 rounded-lg
+                                   text-gray-700 font-medium
+                                   hover:bg-gray-100 hover:scale-105 transition">
+                                Storage & Shipping
+                            </button>
+                        </li>
+
+                        <li>
+                            <button onclick="showTab('payments', this)" class="tab-btn w-full text-left px-5 py-3 rounded-lg
+                                   text-gray-700 font-medium
+                                   hover:bg-gray-100 hover:scale-105 transition">
+                                Receive Payments
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="showTab('app', this)" class="tab-btn w-full text-left px-5 py-3 rounded-lg
+                                   text-gray-700 font-medium
+                                   hover:bg-gray-100 hover:scale-105 transition">
+                                Seller Panel
+                            </button>
+                        </li>
+
+                        <li>
+                            <button onclick="showTab('support', this)" class="tab-btn w-full text-left px-5 py-3 rounded-lg
+                                   text-gray-700 font-medium
+                                   hover:bg-gray-100 hover:scale-105 transition">
+                                Help & Support
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- ================= RIGHT CONTENT ================= -->
+            <div class="col-span-12 md:col-span-8 lg:col-span-9
+            bg-white rounded-xl shadow-sm p-10
+            h-[85vh] overflow-y-auto scroll-smooth">
+
+
+                <div id="create" class="tab-content scroll-section pb-12">
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                        <!-- ================= LEFT CONTENT ================= -->
+                        <div class="lg:col-span-8">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-3">
+                                Create Account
+                            </h2>
+
+                            <!-- Blue underline -->
+                            <div class="w-14 h-1 bg-blue-600 rounded mb-4"></div>
+
+                            <p class="text-md leading-relaxed text-gray-700 mb-6">
+                                Creating your <span class="font-semibold">Ketalog</span> seller account is a quick
+                                process, taking less than 10 minutes, and requires only 3 documents.
+                                Follow the checklist to ensure a seamless account creation experience.
+                                By having these documents ready, you can streamline the account
+                                creation process and get started on Ketalog as an online seller in no time.
+                            </p>
+
+                            <!-- Notes -->
+                            <div class="text-md text-gray-600 space-y-2 mb-4">
+                                <p>* for selling in all categories except for books</p>
+                                <p>** for selling under books category</p>
+                            </div>
+                            <!-- ================= CREATE ACCOUNT STEPS ================= -->
+                            <div class="mt-5 mb-8 bg-white rounded-2xl border border-gray-200 shadow-sm px-8 py-6">
+
+                                <!-- Heading -->
+                                <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                                    How to create an Account?
+                                </h3>
+
+                                <p class="text-sm text-gray-600 mb-6">
+                                    Follow the simple steps below to get started on Ketalog.
+                                </p>
+
+                                <!-- Steps -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                                    <!-- Step 1 -->
+                                    <div class="flex items-center gap-4">
+
+                                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-50">
+                                            <!-- User Icon -->
+                                            <img src="/assets/icons/Account Icon.svg" alt="Sell Online"
+                                                class="w-6 h-6 text-blue-600">
+
+                                        </div>
+
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">
+                                                Register by Number
+                                            </p>
+                                            <p class="text-xs text-gray-600">
+                                                Sign up using your mobile number
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 2 -->
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-50">
+                                            <!-- Document Icon -->
+                                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                                stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M9 12h6m-6 4h6M7 4h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z" />
+                                            </svg>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">
+                                                Company Details
+                                            </p>
+                                            <p class="text-xs text-gray-600">
+                                                Enter your business information
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- NEW PARAGRAPH (FROM ATTACHED IMAGE) -->
+                            <p class="text-md leading-relaxed text-gray-700">
+                                Ketalog offers a diverse range of over 3000+ categories where you can sell
+                                your products. These categories represent just a fraction of the wide variety
+                                available on Ketalog, providing ample opportunities for sellers to showcase
+                                their products to a large customer base. Here are some popular categories
+                                to consider for online selling:
+                            </p>
+                        </div>
+
+
+                        <!-- ================= RIGHT IMAGE ================= -->
+                        <!-- ================= MOBILE APP AUTO SCROLL PREVIEW ================= -->
+                        <section style="
+    max-width: 1200px;
+    margin: 64px auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+">
+
+
+                            <!-- Phone Frame -->
+                            <div style="
+        position: relative;
+        width: 260px;
+        height: 520px;
+        border-radius: 32px;
+        border: 10px solid #111827;
+        background: #000;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    ">
+
+
+                                <!-- Auto scrolling image -->
+                                <img src="/assets/images/iPhone-13-PRO-ketalog.in (2).png"
+                                    alt="Ketalog Mobile App Preview" style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                animation: phoneScroll 18s linear infinite;
+            " />
+
+
+                            </div>
+
+
+                        </section>
+
+
+                        <!-- INLINE KEYFRAMES -->
+                        <style>
+                            .phone-wrapper {
+                                height: 500px;
+                                /* visible phone area */
+                                width: 260px;
+                                overflow: hidden;
+                                /* IMPORTANT */
+                                border-radius: 28px;
+                                background: #fff;
+                            }
+
+
+                            .phone-scroll-img {
+                                width: 100%;
+                                display: block;
+                                animation: phoneScroll 22s linear infinite;
+                            }
+
+
+                            @keyframes phoneScroll {
+                                0% {
+                                    transform: translateY(0%);
+                                }
+
+                                100% {
+                                    transform: translateY(-85%);
+                                }
+                            }
+                        </style>
+
+
+                    </div>
+                    <!-- ================= POPULAR CATEGORIES SECTION ================= -->
+                    <div class="mt-5 bg-white rounded-xl shadow-md p-8">
+
+                        <!-- Section Heading -->
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6">
+                            Popular categories to sell across India
+                        </h3>
+
+                        <!-- Categories Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-12 text-gray-700">
+
+                            <!-- Column 1 -->
+                            <ul class="space-y-3">
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Mobile
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Electronics
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Jewellery
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Makeup
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Books
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Beauty
+                                        Products Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Shirts
+                                        Online</a></li>
+                            </ul>
+
+                            <!-- Column 2 -->
+                            <ul class="space-y-3">
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Clothes
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Women
+                                        Clothes Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Tshirts
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Paintings
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Home
+                                        Products Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Toys
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Indian
+                                        Clothes Online</a></li>
+                            </ul>
+
+                            <!-- Column 3 -->
+                            <ul class="space-y-3">
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Sarees
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Shoes
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Furniture
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Watch
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Kurtis
+                                        Online</a></li>
+                                <li><a href="https://ketalog.in" class="hover:text-blue-600 transition">Sell Appliances
+                                        Online</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="products" class="tab-content scroll-section pb-12">
+
+
+                    <!-- ================= MAIN CONTENT CARD ================= -->
+                    <div class="bg-white rounded-xl mb-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+                            <!-- LEFT CONTENT (NARROWER TEXT) -->
+                            <div class="lg:col-span-6">
+                                <h2 class="text-3xl font-bold text-gray-900 mb-3">
+                                    List Products
+                                </h2>
+
+                                <div class="w-12 h-1 bg-blue-600 rounded mb-6"></div>
+
+                                <p class="text-md leading-relaxed text-gray-700 mb-6 max-w-[520px]">
+                                    What is a listing? A listing refers to the process of registering your
+                                    product on the <span class="font-semibold">Ketalog</span> platform,
+                                    making it visible to customers, and enabling them to view and purchase
+                                    your product. It involves creating a detailed product page that includes
+                                    essential information such as product title, description, images, pricing,
+                                    and other relevant details.
+                                </p>
+
+                                <p class="text-md leading-relaxed text-gray-700 mb-6 max-w-[520px]">
+                                    A well-crafted listing helps attract potential customers and facilitates
+                                    the sale of your product on Ketalog.
+                                </p>
+                            </div>
+
+                            <!-- RIGHT IMAGE (BIGGER) -->
+                            <div class="lg:col-span-6 flex justify-center items-center">
+                                <img src="/assets/images/product page image.png" alt="Ketalog Product Listing Screen"
+                                    class="w-full max-w-[600px] rounded-xl shadow-lg object-contain" />
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- ================= TIP SECTION (FULL WIDTH) ================= -->
+                    <div class="w-full bg-blue-50 border border-blue-100 rounded-xl p-6 mb-5">
+                        <div class="flex items-start gap-6">
+                            <svg class="w-6 h-6 text-yellow-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+
+                            <p class="text-md leading-relaxed text-gray-700">
+                                Did you know that providing precise and comprehensive information
+                                about your product, along with clear and captivating images, can
+                                increase its visibility on our platform by up to
+                                <strong>15%</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="shipping" class="tab-content scroll-section pb-12">
+
+                    <!-- ================== STORAGE & SHIPPING ================== -->
+                    <h2 class="text-3xl font-bold mb-4">Storage & Shipping</h2>
+                    <div class="w-12 h-1 bg-blue-600 rounded mb-6"></div>
+
+                    <p class="text-base leading-relaxed text-gray-700 mb-6 max-w-[720px]">
+                        Congratulations on receiving your first order! When it comes to shipping
+                        your products to customers, <span class="font-semibold">Ketalog</span>
+                        understands the importance of fast and reliable delivery in secure packaging.
+                    </p>
+
+                    <p class="text-base leading-relaxed text-gray-700 mb-6 max-w-[720px]">
+                        We provide two fulfillment options for you to choose from
+                    </p>
+
+                    <!-- ================= FULFILLMENT OPTIONS ================= -->
+                    <div class="flex flex-col gap-4 max-w-[420px]">
+
+                        <div class="flex items-center gap-2 p-1 rounded-lg">
+                            <span
+                                class="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-sm font-bold">✓</span>
+                            <span class="text-base text-gray-800">Fulfilment by Ketalog (FBK)</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 p-1 rounded-lg">
+                            <span
+                                class="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-sm font-bold">✓</span>
+                            <span class="text-base text-gray-800">Non Fulfilment by Ketalog (NFBK)</span>
+                        </div>
+
+                    </div>
+
+                    <p class="text-base leading-relaxed text-gray-700 mt-6 max-w-[720px]">
+                        Consider the fulfillment option that best suits your needs and preferences to
+                        ensure timely and secure delivery of your products to Ketalog customers.
+                    </p>
+
+                    <!-- ================= FBK ================= -->
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">
+                        Fulfilment by Ketalog (FBK)
+                    </h3>
+
+                    <p class="text-base leading-relaxed text-gray-700 mb-6 mt-3 max-w-[900px]">
+                        Eliminate worries about storage, packing, shipping, and delivery by leveraging
+                        <span class="font-semibold">Ketalog's Fulfilment by Ketalog (FBK)</span> service.FBF offers a
+                        comprehensive solution that handles all your shipping needs under one roof. With FBF, you can
+                        entrust ketalog to efficiently manage the entire process, from storing your products to
+                        expertly packing and shipping them to customers. Enjoy a hassle-free experience and focus on
+                        growing your business while Ketalog takes care of the logistics.
+                    </p>
+
+                    <!-- FBK BENEFITS -->
+                    <div class="max-w-[1000px]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4">
+
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Pick-up from seller location to
+                                    Ketalog warehouse</span></div>
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>KAssured badge</span></div>
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Faster delivery to customers</span>
+                            </div>
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Seamless order processing</span></div>
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Customer returns handled
+                                    end-to-end</span></div>
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Warehouse space availability</span>
+                            </div>
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Quality selection
+                                    recommendations</span></div>
+                            <div class="flex items-start gap-3"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Rigorous quality checks</span></div>
+                            <div class="flex items-start gap-3 md:col-span-2"><span
+                                    class="text-blue-600 font-bold">✓</span><span>Quality packaging materials</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ================= NFBK (THIS WAS CAUSING ISSUE) ================= -->
+                    <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">
+                        Non Fulfilment by Ketalog (NFBK)
+                    </h3>
+
+                    <p class="text-base leading-relaxed text-gray-700 mb-6 mt-3 max-w-[1000px]">
+                        With Non-Fulfillment by Ketalog (NFBF), you can benefit from end-to-end delivery of your
+                        products directly from your location to the customer. In NFBF, it is the responsibility of the
+                        seller to ensure that the product is properly packed and ready for dispatch before the ketalog
+                        agent arrives at the seller's location. This service allows you to maintain control over the
+                        packaging process while leveraging ketalog's logistics network for efficient and reliable
+                        delivery.
+                    </p>
+
+                    <!-- NFBK BENEFITS -->
+                    <div class="flex flex-col gap-3 max-w-[800px]">
+
+                        <div class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span><span>Delivery
+                                to 19000+ pin codes across India</span></div>
+                        <div class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span><span>Tracking
+                                of your product</span></div>
+                        <div class="flex items-start gap-3"><span class="text-blue-600 font-bold">✓</span><span>Customer
+                                returns support</span></div>
+                        <div class="flex items-start gap-3"><span
+                                class="text-blue-600 font-bold">✓</span><span>Logistics support from community warehouse
+                                available</span></div>
+
+                    </div>
+
+                </div>
+
+                <div id="payments" class="tab-content scroll-section pb-12">
+
+                    <!-- Heading (UNCHANGED) -->
+                    <h2 class="text-3xl font-bold mb-4 mt-6">Receive Payments</h2>
+                    <div class="w-12 h-1 bg-blue-600 rounded mb-8"></div>
+
+                    <!-- ================= CONTENT ================= -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center bg-blue-50 rounded-xl">
+
+                        <!-- LEFT IMAGE -->
+                        <div class="lg:col-span-4 flex justify-center">
+                            <img src="/assets/images/7 Days Payment.png" alt="Receive Payments in 7 Days"
+                                class="max-w-[500px] w-full" />
+                        </div>
+
+                        <!-- RIGHT CONTENT -->
+                        <div class="lg:col-span-8">
+                            <p class="text-md leading-relaxed text-gray-700 mb-6 max-w-[720px]">
+                                With a customer base of over <span class="font-semibold">45 crore+</span> on
+                                <span class="font-semibold">Ketalog</span>, you can expect orders from customers
+                                across India. To ensure your convenience, Ketalog ensures timely payments
+                                directly into your registered bank account, which you provide during the
+                                Ketalog account creation process.
+                            </p>
+
+                            <p class="text-md leading-relaxed text-gray-700 mb-6 max-w-[720px]">
+                                You can receive your payments as fast as
+                                <span class="font-semibold">7 days*</span> from the date of dispatch, enabling
+                                you to manage your cash flow efficiently and focus on growing your business.
+                            </p>
+
+                            <a href="#" class="text-blue-600 font-medium hover:underline">
+                                Know more about Fees &amp; Commission
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div id="app" class="tab-content scroll-section pb-12">
+
+                    <!-- Heading (UNCHANGED) -->
+                    <h2 class="text-3xl font-bold mb-4">Seller App</h2>
+                    <div class="w-12 h-1 bg-blue-600 rounded mb-8"></div>
+
+                    <!-- ================= CONTENT CONTAINER ================= -->
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center rounded-xl p-10 border border-blue-300 hover:border-blue-300 transition">
+
+                        <!-- LEFT IMAGE -->
+                        <div class="lg:col-span-4 flex justify-center">
+                            <img src="/assets/images/home page .png" alt="Ketalog Seller App"
+                                class="w-full max-w-[260px] object-contain" />
+                        </div>
+
+                        <!-- RIGHT CONTENT -->
+                        <div class="lg:col-span-8">
+
+                            <p class="text-md leading-relaxed text-gray-700 mb-6 pr-4 max-w-[760px]">
+                                We recognize the significance of staying connected to your
+                                <span class="font-semibold">Ketalog</span> online business no matter
+                                where you are. That’s why we offer the Ketalog Seller App — your
+                                trusted companion for managing your business on the go.
+                            </p>
+
+                            <p class="text-lg font-semibold text-gray-700 mb-4">
+                                The Seller App enables you to conveniently handle
+                            </p>
+
+                            <!-- FEATURES LIST -->
+                            <div class="grid grid-cols-1 md:grid-cols-1 gap-y-4 gap-x-10 mb-4">
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold">✓</span>
+                                    <span>Create and manage listings</span>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold">✓</span>
+                                    <span>Manage orders and fulfilment</span>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold">✓</span>
+                                    <span>Track inventory</span>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold">✓</span>
+                                    <span>Payments</span>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold">✓</span>
+                                    <span>Advertising</span>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold">✓</span>
+                                    <span>Business insights</span>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold">✓</span>
+                                    <span>Seller support and more</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="support" class="tab-content scroll-section">
+
+                    <!-- Heading (UNCHANGED) -->
+                    <h2 class="text-3xl font-bold mb-4">Help & Support</h2>
+                    <div class="w-12 h-1 bg-blue-600 rounded mb-4"></div>
+
+                    <!-- ================= CONTENT CONTAINER ================= -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+
+                        <!-- LEFT CONTENT -->
+                        <div class="lg:col-span-7">
+
+                            <p class="text-md leading-relaxed text-gray-700 mb-6 max-w-[720px]">
+                                What sets us apart is our exceptional <span class="font-semibold">Ketalog</span>
+                                seller support assistance. We prioritise your needs and are committed to
+                                providing you with prompt assistance, whether you have questions, doubts,
+                                or require any kind of support for your business.
+                            </p>
+
+                            <p class="text-md leading-relaxed text-gray-700 mb-6 max-w-[720px]">
+                                Our dedicated team is here to help you every step of the way, ensuring that
+                                you have a smooth and successful selling experience on Ketalog. Feel free
+                                to reach out to us whenever you need assistance — we’re always here to
+                                support you.
+                            </p>
+
+                            <a href="#" class="inline-block text-blue-600 font-medium hover:underline mb-2">
+                                Know more about the assistance we offer.
+                            </a>
+
+                        </div>
+
+                        <!-- RIGHT IMAGE -->
+                        <div class="lg:col-span-5 flex justify-center">
+                            <img src="/assets/images/help image.png" alt="Ketalog Seller Support"
+                                class="w-full max-w-[340px] object-contain rounded-xl" />
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= JS ================= -->
+    <script>
+        /* ---------------- TAB CLICK → SCROLL ---------------- */
+        // function showTab(tabId, el) {
+        //     const target = document.getElementById(tabId);
+        //     if (!target) return;
+
+        //     target.scrollIntoView({
+        //         behavior: "smooth",
+        //         block: "start"
+        //     });
+
+        //     setActiveTab(el);
+        // }
+        // /* ---------------- SET ACTIVE TAB STYLE ---------------- */
+        // function setActiveTab(activeBtn) {
+        //     const tabButtons = document.querySelectorAll(".tab-btn");
+
+        //     tabButtons.forEach(btn => {
+        //         btn.classList.remove(
+        //             "bg-blue-50",
+        //             "text-blue-600",
+        //             "border-blue-600",
+        //             "scale-105",
+        //             "shadow-md"
+        //         );
+        //         btn.classList.add("text-gray-700");
+        //     });
+
+        //     if (activeBtn) {
+        //         activeBtn.classList.add(
+        //             "bg-blue-50",
+        //             "text-blue-600",
+        //             "border-blue-600",
+        //             "scale-105",
+        //             "shadow-md"
+        //         );
+        //     }
+        // }
+
+        /* ---------------- SCROLL → AUTO ACTIVE TAB ---------------- */
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const sections = document.querySelectorAll('.scroll-section');
+        const scrollContainer = document.querySelector('.overflow-y-auto');
+
+        let currentActiveId = null;
+
+        function showTab(tabId, el) {
+            const target = document.getElementById(tabId);
+            if (!target) return;
+
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+
+            setActiveTab(el);
+            currentActiveId = tabId;
+        }
+
+        function setActiveTab(activeBtn) {
+            tabButtons.forEach(btn => {
+                btn.classList.remove(
+                    'bg-blue-50',
+                    'text-blue-600',
+                    'border-blue-600',
+                    'scale-105',
+                    'shadow-md'
+                );
+                btn.classList.add('text-gray-700');
+            });
+
+            activeBtn.classList.add(
+                'bg-blue-50',
+                'text-blue-600',
+                'border-blue-600',
+                'scale-105',
+                'shadow-md'
+            );
+        }
+
+        const observer = new IntersectionObserver(
+            entries => {
+                let closestSection = null;
+                let closestDistance = Infinity;
+
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+
+                    // distance from top of scroll container
+                    const distance = Math.abs(entry.boundingClientRect.top);
+
+                    if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestSection = entry.target;
+                    }
+                });
+
+                if (!closestSection) return;
+
+                const sectionId = closestSection.id;
+
+                if (sectionId === currentActiveId) return;
+
+                const matchingBtn = document.querySelector(
+                    `.tab-btn[onclick*="${sectionId}"]`
+                );
+
+                if (matchingBtn) {
+                    setActiveTab(matchingBtn);
+                    currentActiveId = sectionId;
+                }
+            },
+            {
+                root: scrollContainer,
+                threshold: 0,
+                rootMargin: '-80px 0px -60% 0px'
+            }
+        );
+
+        sections.forEach(section => observer.observe(section));
+        // const sections = document.querySelectorAll(".scroll-section");
+        // const scrollContainer = document.querySelector(".overflow-y-auto");
+
+        // if (scrollContainer) {
+        //     const observer = new IntersectionObserver(
+        //         (entries) => {
+        //             entries.forEach(entry => {
+        //                 if (entry.isIntersecting) {
+        //                     const sectionId = entry.target.id;
+        //                     const matchingBtn = document.querySelector(
+        //                         `.tab-btn[onclick*="${sectionId}"]`
+        //                     );
+
+        //                     if (matchingBtn) {
+        //                         setActiveTab(matchingBtn);
+        //                     }
+        //                 }
+        //             });
+        //         },
+        //         {
+        //             root: scrollContainer,
+        //             threshold: 0.55
+        //         }
+        //     );
+
+        //     sections.forEach(section => observer.observe(section));
+        // }
+
+
+    </script>
+
+</body>
+
+</html>
